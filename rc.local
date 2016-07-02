@@ -1,0 +1,6 @@
+/bin/test -f /opt/fdisk-non-interactive.sh || exit 1
+/bin/test -x /opt/fdisk-non-interactive.sh && /opt/fdisk-non-interactive.sh
+/bin/test -x /opt/fdisk-non-interactive.sh && $(/bin/chmod -x /opt/fdisk-non-interactive.sh && /sbin/shutdown -r now)
+/bin/test -f /opt/pv_lv_resize.sh || exit 1
+/bin/test -x /opt/pv_lv_resize.sh && /opt/pv_lv_resize.sh
+/bin/chmod -x /opt/pv_lv_resize.sh
